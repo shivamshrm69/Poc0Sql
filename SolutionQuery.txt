@@ -1,0 +1,1 @@
+select author.author_name, post.*,comment.comment,comment.comment_time from post,comment,author where author.author_id=post.author_id and comment.post_id=post.post_id and author.author_name="James Bond" order by comment.comment_time desc limit 10;
